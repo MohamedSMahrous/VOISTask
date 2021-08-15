@@ -1,0 +1,83 @@
+{
+	"variables": [],
+	"info": {
+		"name": "VodafoneTask",
+		"_postman_id": "06f92bd0-e627-110d-4709-e8aa017770e0",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/getAllWaiting",
+			"request": {
+				"url": "http://localhost:8080/getAllWaiting",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/getAllReadyForSale",
+			"request": {
+				"url": "http://localhost:8080/getAllReadyForSale",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/deleteDevice?deviceId=2",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/deleteDevice?deviceId=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deleteDevice"
+					],
+					"query": [
+						{
+							"key": "deviceId",
+							"value": "2",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/updateDeviceStatus",
+			"request": {
+				"url": "http://localhost:8080/updateDeviceStatus",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"deviceId\":2,\n\t\"newStatusId\":2\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
